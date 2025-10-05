@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="site.css">
+    <title>Vote for your faviorate player</title>
+    <script defer src ="vote.js"></script>
+    <script defer src ="program.js" type="module"></script>   
+</head>
+<body class="page">
+
+    <header>
+        <h1>Vote for the GOAT in NBA</h1>
+    </header>
+    <main>
+        <section class="playersbox">
+            <section class="player1">
+                <h2>Player 1</h2>
+                <img id="photo" class="photo" src="images/placeholder.png" alt="Photo" width="100%">
+                <div>
+                    <label>Name:</label>
+                    <ul id="name"></ul>
+                </div>
+                <div>
+                    <label>Teams:</label>
+                    <ul id="teams"></ul>
+                </div>
+                <div>
+                    <label>Numbers:</label>
+                    <ul id="numbers"></ul>
+                </div>
+
+            </section>
+            <section class="player2">
+                <h2>Player 2</h2>
+                <img id="photo1" class="photo1" src="images/placeholder.png" alt="Photo" width="100%">
+                <div>
+                    <label>Name:</label>
+                    <ul id="name1"></ul>
+                </div>
+                <div>
+                    <label>Teams:</label>
+                    <ul id="teams1"></ul>
+                </div>
+                <div>
+                    <label>Numbers:</label>
+                    <ul id="numbers1"></ul>
+                </div>
+            </section>
+        </section>
+        <h2 id="voteName" class="vote1"></h2>
+        <h3 id="voteSteps" class="vote2"></h3>
+        <section class="enter">
+            <label for="playerNumber">Player Number</label>
+            <input id="playerNumber" />
+            <button id="voteplayer">The Goat</button>
+        </section>
+    
+        <table class="box">
+          <thead>
+            <tr>
+              <th class="box1">Player#</th>
+              <th class="box2">Names</th>
+              <th class="box3">Numbers</th>
+              <th class="box4">Teams</th>
+              <th class="box5">#Votes</th>
+            </tr>
+          </thead>
+          <tbody id="players"></tbody>
+        </table>
+    </main>
+	<footer class="end">
+        &copy;<span id="year"></span> | Emery Huang | Week 6
+    </footer>
+</body>
+</html>
